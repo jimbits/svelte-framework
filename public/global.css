@@ -9,7 +9,17 @@
  */
 
  /* Color Varibles */
+ @font-face {
+  font-family: 'product';
+  src: url('fonts/product/product_sans_regular.woff2') format('woff2'),
+       url('fonts/product_sans_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
  :root {
+   --airbnb:#ff575e;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -23,8 +33,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --gray-medium: #666666;
-  --gray-light: #f9f9f9;
+  --gray-medium: #a1aab3;
+  --gray-light: #e6eef7;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -109,7 +119,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
+  font-family: "product";
   font-weight: 700;
 }
 /* Level Heading Font Size Default Settings */ 
@@ -120,7 +130,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: green;
 }
 
 h3 {
@@ -161,11 +170,16 @@ video {
   height: auto;
   max-width: 100%;
 }
-svg {
+svg, img {
   overflow: hidden;
   vertical-align: middle;
 }
-
+/* 
+ List Element Reset Styles
+*/
+ul,li,ol{
+  list-style-type: none;
+}
 /* 
 Table Element Reset 
 */
